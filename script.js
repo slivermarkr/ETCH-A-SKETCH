@@ -43,14 +43,16 @@ function createGrid(){
 container.addEventListener('mouseover',(e) => {
     if(!e.target.classList.contains('grid')) return;
     // e.target.classList.add('hover')
-    let random = Math.floor(Math.random() * 255);
-    const r = random;
-    const g = random;
-    const b = random;
+    let random1 = Math.floor(Math.random() * 255);
+    let random2 = Math.floor(Math.random() * 255);
+    let random3 = Math.floor(Math.random() * 255);
+    const r = random1;
+    const g = random2;
+    const b = random3;
     console.log(r);
     console.log(g);
     console.log(b);
-    e.target.style.backgroundColor = `rgba(${r},${g},${b},0.5)`;
+    e.target.style.backgroundColor = `rgba(${r},${g},${b},${Math.random()})`;
    
 })
 
