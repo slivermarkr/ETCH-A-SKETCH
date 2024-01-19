@@ -1,4 +1,9 @@
 # ETCH-A-SKETCH
+
+## NOT FINISHED YET
+
+### BUT YOU CAN CHECK THE LINK OUT: I'M UP FOR YOUR ADVICE IF YOU HAVE https://slivermarkr.github.io/ETCH-A-SKETCH/
+
 //printing gridk
 -webpage with 16x16 grid of square divs using JS
 
