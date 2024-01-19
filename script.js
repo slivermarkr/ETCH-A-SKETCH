@@ -1,5 +1,5 @@
 const container = document.querySelector('.container');
-const section = document.querySelector('.section');
+const section = document.querySelector('header-section');
 const button = document.querySelector('.button');
 
 let size;
@@ -7,18 +7,12 @@ button.addEventListener('click',() => {
     do{
      size =  parseInt(prompt("Enter size up to 100 : "))
     } while (
-        size > 100
+        size > 100 || size < 1 || isNaN(size)
     );
-
-
-
      createGrid();
 })
 
-
-
 function createGrid(){
-    
     //for row
     for(let i = 0; i < size; i++){
     //for column
