@@ -4,18 +4,19 @@ const button = document.querySelector('.button');
 
 let size;
 button.addEventListener('click',() => {
-     size =  parseInt(prompt("Enter size: "))
+    do{
+     size =  parseInt(prompt("Enter size up to 100 : "))
+    } while (
+        size > 100
+    );
+
+
+
      createGrid();
 })
 
 
-console.log(container.clientWidth)
-console.log(container.clientHeight)
 
-
-
-
-createGrid();
 function createGrid(){
     
     //for row
@@ -25,14 +26,14 @@ function createGrid(){
             let box = document.createElement('div');
             box.classList.add("grid");
             container.appendChild(box);
-            box.style.width = `${960 / size}px`;
-            box.style.height = `${960 / size}px`;
+            box.style.width = `${container.clientWidth / size}px`;
+            box.style.height = `${container.clientHeight / size}px`;
         }
     let box = document.createElement('div');
     box.classList.add("grid");
     container.appendChild(box);
-    box.style.width = `${960 / size}px`;
-    box.style.height = `${960 / size}px`;
+    box.style.width = `${container.clientWidth/ size}px`;
+    box.style.height = `${container.clientHeight / size}px`;
 }};
 
 container.addEventListener('mouseover',(e) => {
