@@ -42,10 +42,19 @@ function createGrid(){
 
 container.addEventListener('mouseover',(e) => {
     if(!e.target.classList.contains('grid')) return;
-    e.target.classList.add('hover')
+    // e.target.classList.add('hover')
+    let random = Math.floor(Math.random() * 255);
+    const r = random;
+    const g = random;
+    const b = random;
+    console.log(r);
+    console.log(g);
+    console.log(b);
+    e.target.style.backgroundColor = `rgba(${r},${g},${b},0.5)`;
+   
 })
 
-colorPane.addEventListener('change',updateChanges);
-function updateChanges() {
-    document.documentElement.style.setProperty(`--${this.name}`,this.value);
-}
+// colorPane.addEventListener('change',updateChanges);
+// function updateChanges() {
+//     document.documentElement.style.setProperty(`--${this.name}`,this.value);
+// }
