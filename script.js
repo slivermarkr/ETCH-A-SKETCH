@@ -2,11 +2,11 @@ const container = document.querySelector('.container');
 const section = document.querySelector('.section');
 const button = document.querySelector('.button');
 
-let size = 64;
-// button.addEventListener('click',() => {
-//      size =  parseInt(prompt("Enter size: "))
-//      console.log(typeof size);
-// })
+let size;
+button.addEventListener('click',() => {
+     size =  parseInt(prompt("Enter size: "))
+     createGrid();
+})
 
 
 console.log(container.clientWidth)
