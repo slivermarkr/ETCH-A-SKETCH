@@ -1,11 +1,18 @@
 :root {
     --base: #000000;
 }
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 .header-section {
     display: flex;
     justify-content: space-around;
     align-items: center;
     flex-direction: row;
+    width: 960px;
     
 }
 .container {
