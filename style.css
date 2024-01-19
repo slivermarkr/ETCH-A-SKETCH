@@ -1,23 +1,26 @@
- body{
+.section {
     display: flex;
     justify-content: center;
     align-items: center;
- }
- 
- .container{
-    
-    margin: 0;
-    width: 300px;
-    height: 300px;
+    flex-direction: column;
+}
+.container {
+    width: 960px;
+    height: 960px;
+    border: solid black 2px;
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-} 
-.grids {
-    border: 1px solid black;
-    width: 16px;
-    height: 16px;
-    
-    
+}
+
+.grid {
+    background-color: red;
+    margin: 0;
+    border: 0;
+}
+.button{
+    align-self: self-start;
+}
+
+.hover{
+   background-color: white; 
 }
