@@ -1,11 +1,3 @@
-//need a restart function
-//need a color picker
-//different way of filling color
-//maybe another way of asking for size input...button is buggy
-
-
-
-
 const container = document.querySelector('.container');
 const section = document.querySelector('header-section');
 const button = document.querySelector('.button');
@@ -47,8 +39,6 @@ container.addEventListener('mouseover',(e) => {
     const b = Math.floor(Math.random() * 255);
    
     e.target.style.backgroundColor = `rgba(${r},${g},${b},1)`;
-
-   
 })
 
 function clearCanvas(){
