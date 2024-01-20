@@ -23,11 +23,13 @@ body {
     flex-wrap: wrap;
 }
 .grid {
-    background-color: white;
+    background-color: none ;
     margin: 0;
     border: 0;
 }
-
+.btn {
+    font-size: 20px;
+}
 
 .hover{
    background-color: var(--base);

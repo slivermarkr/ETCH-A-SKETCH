@@ -9,8 +9,7 @@
 const container = document.querySelector('.container');
 const section = document.querySelector('header-section');
 const button = document.querySelector('.button');
-const colorPane = document.querySelector('.header-section input');
-
+const clearBtn = document.querySelector('.clear');
 
 let size;
 button.addEventListener('click',() => {
@@ -48,8 +47,18 @@ container.addEventListener('mouseover',(e) => {
     const b = Math.floor(Math.random() * 255);
    
     e.target.style.backgroundColor = `rgba(${r},${g},${b},1)`;
+
    
 })
+
+function clearCanvas(){
+    container.innerHTML = '';
+    createGrid();
+}
+
+clearBtn.addEventListener('click',clearCanvas)
+
+
 
 // colorPane.addEventListener('change',updateChanges);
 // function updateChanges() {
