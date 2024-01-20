@@ -18,7 +18,7 @@ button.addEventListener('click',() => {
     } while (
         size > 100 || size < 1 || isNaN(size)
     );
-     createGrid();
+     clearCanvas();
 })
 
 function createGrid(){
